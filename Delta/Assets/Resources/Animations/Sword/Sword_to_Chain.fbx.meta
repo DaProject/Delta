@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 8cc899b274acb0c48bbba122538c64fd
+timeCreated: 1461685448
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: CC_Master_Sword
+    100002: CC_perMasterSword
+    100004: CC_Sword_1
+    100006: CC_Sword_2
+    100008: CC_Sword_3
+    100010: CC_Sword_4
+    100012: CC_Sword_5
+    100014: J_Root
+    100016: J_Sword01
+    100018: J_Sword02
+    100020: J_Sword03
+    100022: J_Sword04
+    100024: J_Sword05
+    100026: J_Sword06
+    100028: J_Sword07
+    100030: J_Sword08
+    100032: J_Sword_End
+    100034: J_Union01
+    100036: J_Union02
+    100038: J_Union03
+    100040: J_Union04
+    100042: J_Union05
+    100044: J_Union06
+    100046: J_Union07
+    100048: J_Union08
+    100050: //RootNode
+    100052: Sword_IK
+    100054: Sword_IKCurve
+    100056: SwordCluster01
+    100058: SwordCluster02
+    100060: SwordCluster03
+    100062: SwordCluster04
+    100064: SwordCluster05
+    100066: SwordGeo
+    400000: CC_Master_Sword
+    400002: CC_perMasterSword
+    400004: CC_Sword_1
+    400006: CC_Sword_2
+    400008: CC_Sword_3
+    400010: CC_Sword_4
+    400012: CC_Sword_5
+    400014: J_Root
+    400016: J_Sword01
+    400018: J_Sword02
+    400020: J_Sword03
+    400022: J_Sword04
+    400024: J_Sword05
+    400026: J_Sword06
+    400028: J_Sword07
+    400030: J_Sword08
+    400032: J_Sword_End
+    400034: J_Union01
+    400036: J_Union02
+    400038: J_Union03
+    400040: J_Union04
+    400042: J_Union05
+    400044: J_Union06
+    400046: J_Union07
+    400048: J_Union08
+    400050: //RootNode
+    400052: Sword_IK
+    400054: Sword_IKCurve
+    400056: SwordCluster01
+    400058: SwordCluster02
+    400060: SwordCluster03
+    400062: SwordCluster04
+    400064: SwordCluster05
+    400066: SwordGeo
+    4300000: SwordGeo
+    7400000: Sword_to_Chain
+    9500000: //RootNode
+    13700000: SwordGeo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sword_to_Chain
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: CC_perMasterSword
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_1
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_1/SwordCluster01
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_2
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_2/SwordCluster02
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_3
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_3/SwordCluster03
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_4
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_4/SwordCluster04
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_5
+        weight: 1
+      - path: CC_perMasterSword/CC_Master_Sword/CC_Sword_5/SwordCluster05
+        weight: 1
+      - path: CC_perMasterSword/Sword_IKCurve
+        weight: 1
+      - path: J_Root
+        weight: 1
+      - path: J_Root/J_Union01
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06/J_Union07
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06/J_Union07/J_Sword07
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06/J_Union07/J_Sword07/J_Union08
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06/J_Union07/J_Sword07/J_Union08/J_Sword08
+        weight: 1
+      - path: J_Root/J_Union01/J_Sword01/J_Union02/J_Sword02/J_Union03/J_Sword03/J_Union04/J_Sword04/J_Union05/J_Sword05/J_Union06/J_Sword06/J_Union07/J_Sword07/J_Union08/J_Sword08/J_Sword_End
+        weight: 1
+      - path: Sword_IK
+        weight: 1
+      - path: SwordGeo
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

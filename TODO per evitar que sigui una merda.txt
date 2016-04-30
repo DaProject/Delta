@@ -1,0 +1,19 @@
+- Particules al colpejar
+
+- Diferents sons al colpejar
+
+- Animacions guays
+
+- Espasa guay
+
+- Musica guay
+
+- Contador de cops/combos
+
+
+
+Possibles coses a implementar
+
+- Petita barra de vida dels enemics
+
+- numeros de mal flotants, al colpejar als enemics, per veure quan de mal has fet

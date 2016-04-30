@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 90d8e539ef2746f449a9a8b5fac87b52
+timeCreated: 1459390360
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Character5_Head
+    100002: Character5_Hips
+    100004: Character5_LeftArm
+    100006: Character5_LeftFoot
+    100008: Character5_LeftForeArm
+    100010: Character5_LeftHand
+    100012: Character5_LeftHandIndex1
+    100014: Character5_LeftHandIndex2
+    100016: Character5_LeftHandIndex3
+    100018: Character5_LeftHandIndex4
+    100020: Character5_LeftHandMiddle1
+    100022: Character5_LeftHandMiddle2
+    100024: Character5_LeftHandMiddle3
+    100026: Character5_LeftHandMiddle4
+    100028: Character5_LeftHandPinky1
+    100030: Character5_LeftHandPinky2
+    100032: Character5_LeftHandPinky3
+    100034: Character5_LeftHandPinky4
+    100036: Character5_LeftHandRing1
+    100038: Character5_LeftHandRing2
+    100040: Character5_LeftHandRing3
+    100042: Character5_LeftHandRing4
+    100044: Character5_LeftHandThumb1
+    100046: Character5_LeftHandThumb2
+    100048: Character5_LeftHandThumb3
+    100050: Character5_LeftHandThumb4
+    100052: Character5_LeftLeg
+    100054: Character5_LeftShoulder
+    100056: Character5_LeftToeBase
+    100058: Character5_LeftUpLeg
+    100060: Character5_Neck
+    100062: Character5_Reference
+    100064: Character5_RightArm
+    100066: Character5_RightFoot
+    100068: Character5_RightForeArm
+    100070: Character5_RightHand
+    100072: Character5_RightHandIndex1
+    100074: Character5_RightHandIndex2
+    100076: Character5_RightHandIndex3
+    100078: Character5_RightHandIndex4
+    100080: Character5_RightHandMiddle1
+    100082: Character5_RightHandMiddle2
+    100084: Character5_RightHandMiddle3
+    100086: Character5_RightHandMiddle4
+    100088: Character5_RightHandPinky1
+    100090: Character5_RightHandPinky2
+    100092: Character5_RightHandPinky3
+    100094: Character5_RightHandPinky4
+    100096: Character5_RightHandRing1
+    100098: Character5_RightHandRing2
+    100100: Character5_RightHandRing3
+    100102: Character5_RightHandRing4
+    100104: Character5_RightHandThumb1
+    100106: Character5_RightHandThumb2
+    100108: Character5_RightHandThumb3
+    100110: Character5_RightHandThumb4
+    100112: Character5_RightLeg
+    100114: Character5_RightShoulder
+    100116: Character5_RightToeBase
+    100118: Character5_RightUpLeg
+    100120: Character5_Spine
+    100122: Character5_Spine1
+    100124: Character5_Spine2
+    100126: Lahn_Geo
+    100128: //RootNode
+    400000: Character5_Head
+    400002: Character5_Hips
+    400004: Character5_LeftArm
+    400006: Character5_LeftFoot
+    400008: Character5_LeftForeArm
+    400010: Character5_LeftHand
+    400012: Character5_LeftHandIndex1
+    400014: Character5_LeftHandIndex2
+    400016: Character5_LeftHandIndex3
+    400018: Character5_LeftHandIndex4
+    400020: Character5_LeftHandMiddle1
+    400022: Character5_LeftHandMiddle2
+    400024: Character5_LeftHandMiddle3
+    400026: Character5_LeftHandMiddle4
+    400028: Character5_LeftHandPinky1
+    400030: Character5_LeftHandPinky2
+    400032: Character5_LeftHandPinky3
+    400034: Character5_LeftHandPinky4
+    400036: Character5_LeftHandRing1
+    400038: Character5_LeftHandRing2
+    400040: Character5_LeftHandRing3
+    400042: Character5_LeftHandRing4
+    400044: Character5_LeftHandThumb1
+    400046: Character5_LeftHandThumb2
+    400048: Character5_LeftHandThumb3
+    400050: Character5_LeftHandThumb4
+    400052: Character5_LeftLeg
+    400054: Character5_LeftShoulder
+    400056: Character5_LeftToeBase
+    400058: Character5_LeftUpLeg
+    400060: Character5_Neck
+    400062: Character5_Reference
+    400064: Character5_RightArm
+    400066: Character5_RightFoot
+    400068: Character5_RightForeArm
+    400070: Character5_RightHand
+    400072: Character5_RightHandIndex1
+    400074: Character5_RightHandIndex2
+    400076: Character5_RightHandIndex3
+    400078: Character5_RightHandIndex4
+    400080: Character5_RightHandMiddle1
+    400082: Character5_RightHandMiddle2
+    400084: Character5_RightHandMiddle3
+    400086: Character5_RightHandMiddle4
+    400088: Character5_RightHandPinky1
+    400090: Character5_RightHandPinky2
+    400092: Character5_RightHandPinky3
+    400094: Character5_RightHandPinky4
+    400096: Character5_RightHandRing1
+    400098: Character5_RightHandRing2
+    400100: Character5_RightHandRing3
+    400102: Character5_RightHandRing4
+    400104: Character5_RightHandThumb1
+    400106: Character5_RightHandThumb2
+    400108: Character5_RightHandThumb3
+    400110: Character5_RightHandThumb4
+    400112: Character5_RightLeg
+    400114: Character5_RightShoulder
+    400116: Character5_RightToeBase
+    400118: Character5_RightUpLeg
+    400120: Character5_Spine
+    400122: Character5_Spine1
+    400124: Character5_Spine2
+    400126: Lahn_Geo
+    400128: //RootNode
+    4300000: Lahn_Geo
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Lahn_Geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

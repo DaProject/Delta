@@ -1,0 +1,17 @@
+- No poder moure't quan el player estar atacant, pero que sí es desplaci al fer l'animació d'atac.
+
+- Crear una animacio de getDamaged, tan pel player com per l'enemy. Falta feedback de quan fas mal, i de quan t'en fan.
+
+- Crear totes les animacions del player, i de l'enemic.
+
+- Evitar la "resurrecció". El boss t'estuneja tot i haver mort. Després de l'stun, tornes a idle i et pots moure i matar, tot i estar a 0 de vida.
+
+- UI per mostrar quines habilitats tens.
+
+- UI per mostrar el CD de les habilitats.
+
+- Revisar la AnimationDisplacement(), normalitzar els vectors.
+- Tutorial:
+	- Explicar qué fer.
+	- Explicar com fer-ho
+	- Explicar que estàs fent. ex: Onada x/xx

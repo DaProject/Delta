@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: 9652a0c82cbb051499d2b8807f831f51
+timeCreated: 1458411954
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: base_abierta
+    100002: cristal_luz
+    100004: //RootNode
+    100006: Rejilla007
+    100008: techo_base_abierto
+    100010: tuberias_pared
+    100012: tuberias_pared02
+    100014: tuberias_pared03
+    400000: base_abierta
+    400002: cristal_luz
+    400004: //RootNode
+    400006: Rejilla007
+    400008: techo_base_abierto
+    400010: tuberias_pared
+    400012: tuberias_pared02
+    400014: tuberias_pared03
+    2300000: base_abierta
+    2300002: cristal_luz
+    2300004: Rejilla007
+    2300006: techo_base_abierto
+    2300008: tuberias_pared
+    2300010: tuberias_pared02
+    2300012: tuberias_pared03
+    3300000: base_abierta
+    3300002: cristal_luz
+    3300004: Rejilla007
+    3300006: techo_base_abierto
+    3300008: tuberias_pared
+    3300010: tuberias_pared02
+    3300012: tuberias_pared03
+    4300000: base_abierta
+    4300002: cristal_luz
+    4300004: Rejilla007
+    4300006: techo_base_abierto
+    4300008: tuberias_pared
+    4300010: tuberias_pared02
+    4300012: tuberias_pared03
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+- L'enemic ja no et fa mal diversos cop amb tan sols un attack.
+
+- Els enemics ja ataquen repetidament.
+
+- Desactivar els colliders i fisiques dels enemics i player al morir.
+
+- La logica dels atacs funciona correctament(tant si t'han colpejat com si no).
+
+- La logica dels atacs de l'enemic funciona correctament(tant si l'han colpejat com si no).
+
+- Evitar que els enemies es moguin sense parar un cop has matat molts de cop.
+
+- Implementar l'stun el enemyboss correctament dins el enemymanager.
+
+- Millorar el control del player.
+- Ordenar l'script del enemymanager, i posar comentaris.
+
+- UI per mostrar si estas usant l'espasa o la cadena.
+
+- Attac01 no funciona.
+- Revisar el menu, pausa, càrrega/descàrrega d'escenes.
+- Ordenar el codi. Variables declarades en el mateix ordre, sempre.
+- Revisar els comentaris del codi.
+- Quan el jugador torna a la seva posició, despres de realitzar attack01 (o potser altres), es situa sobre l'enemic.
+
+
