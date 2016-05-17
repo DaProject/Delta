@@ -15,13 +15,17 @@ public class DropGameObject : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () 
-	{
-		if (trans.GetComponent<EnemyPumpkinManager> ().currentHealth == 0)
+	{/*
+		if (trans.GetComponent<Generator> ().currentHealth <= 0)
 		{
-			oneTimeDrop ++;
+            if (oneTimeDrop <= 1) Instantiate(drop, transform.position, Quaternion.identity);
 
-			if (oneTimeDrop <= 1) Instantiate(drop, transform.position, Quaternion.identity);
+            oneTimeDrop ++;
 		}
-	}
+	*/}
+    
+    public void DropDash()
+    {
+        Instantiate(drop, transform.position, Quaternion.identity);
+    }
 }
-

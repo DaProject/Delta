@@ -7,8 +7,8 @@ public class CameraLookRotation : MonoBehaviour
     public Transform cameraTransform;
     //public Transform headTransform;
 
-    private Quaternion characterRotation;
-    private Quaternion cameraRotation;
+    public Quaternion characterRotation;
+    public Quaternion cameraRotation;
     //private Quaternion headRotation;
 
     private float xRotation, yRotation;
@@ -33,7 +33,7 @@ public class CameraLookRotation : MonoBehaviour
         xRotation = Input.GetAxis("Mouse Y") * YSensitivity;
 
         characterRotation *= Quaternion.Euler(0f, yRotation, 0f);
-        cameraRotation *= Quaternion.Euler(-xRotation, 0f, 0f);
+        //cameraRotation *= Quaternion.Euler(-xRotation, 0f, 0f);
         //headRotation *= Quaternion.Euler(-xRotation, 0f, 0f);
 
         characterTransform.localRotation = Quaternion.Slerp(characterTransform.localRotation, characterRotation,

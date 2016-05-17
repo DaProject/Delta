@@ -77,9 +77,6 @@ public class Ability1FX : MonoBehaviour {
 
         if (!stunActivated)
         {
-           
-
-            Debug.Log("STUN BOOL FALSE");
             crackGround.SetActive(false);
 
             if (thunders.isPlaying)

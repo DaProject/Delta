@@ -38,7 +38,7 @@ public class PauseScript : MonoBehaviour
         Time.timeScale = 1.0f;
         pauseMenu.SetActive(false);
         isEnabled = false;
-        Debug.Log("Unpaused");
+        //Debug.Log("Unpaused");
     }
 
 }

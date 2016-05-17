@@ -17,7 +17,7 @@ public class LeftHandAttack1 : MonoBehaviour {
             if (!enemyPumpkinManager.playerAttacked)
             {
                 enemyPumpkinManager.playerAttacked = true;
-                Debug.Log("Player Attacked");
+                //Debug.Log("Player Attacked");
                 other.GetComponent<PlayerManager>().setDamaged(transform.root.GetComponent<EnemyPumpkinManager>().attackDamage);
             }
         }

@@ -23,6 +23,8 @@ public class PlayerAttack : MonoBehaviour
 
     public bool trailActivation;
 
+    public TrailRenderer trailWeapon;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -34,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack10(int damageDealt)
     {
-        Debug.Log("Attack10");
+        //Debug.Log("Attack10");
 
         trailActivation = true;
 
@@ -47,7 +49,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack01(int damageDealt)
     {
-        Debug.Log("Attack01");
+        //Debug.Log("Attack01");
 
         playerManager.attack01Collider.enabled = true;          // Activates the collider of the Attack10 attack.
 
@@ -60,7 +62,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Sword10(int damageDealt)
     {
-        Debug.Log("Sword10");
+        //Debug.Log("Sword10");
 
         playerManager.sword10Collider.enabled = true;       // Activates the collider of the Attack10 attack.
 
@@ -73,7 +75,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Chain01(int damageDealt)
     {
-        Debug.Log("Chain01");
+        //Debug.Log("Chain01");
 
         playerAnimation.Chain01Animation();                 // Calls the Chain10Animation function from the PlayerAnimation script.
 
@@ -83,6 +85,7 @@ public class PlayerAttack : MonoBehaviour
     public void Dash()
     {
         Debug.Log("dashing");
+        characterBehaviour.dashing = true;
         playerAnimation.DashAnimation();
         playerManager.playerSphereCollider.enabled = false;
         playerManager.playerCapsuleCollider.enabled = false;

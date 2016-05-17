@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d107199c3baa85b469c8e828d35df9e1
-timeCreated: 1461614158
+guid: a6983cba41acc514ab1cefdff0f074b5
+timeCreated: 1463477629
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -212,7 +212,7 @@ ModelImporter:
     400202: EnemyFast
     400204: EnemyFastGeo
     4300000: EnemyFastGeo
-    7400000: Enemy_01_Walk
+    7400000: Enemy_01_Run
     9500000: //RootNode
     13700000: EnemyFastGeo
   materials:
@@ -237,7 +237,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Enemy_01_Walk
+      name: Enemy_01_Run
       takeName: Take 001
       firstFrame: 1
       lastFrame: 18

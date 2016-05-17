@@ -61,6 +61,8 @@ public class EnemyPumpkinManager : MonoBehaviour
     public SphereCollider leftHandAttack1;      // Sphere collider of the left hand of the enemy. Used to detect if the attack has connected with the player.
     public GameObject pointsText;
     public PointCounter score;
+    public Material[] material;
+    public Renderer mat;
 
     // Animations
     Animator anim;                              // Animator from the enemy.
@@ -166,7 +168,6 @@ public class EnemyPumpkinManager : MonoBehaviour
 
     private void DamagedBehaviour()
     {
-
         temp -= Time.deltaTime;
 
         if (temp <= 0) setActive();
@@ -263,6 +264,8 @@ public class EnemyPumpkinManager : MonoBehaviour
 			blood.Stop(true);
 		}
 
+        mat.material = material[0];
+
         state = EnemyStates.ACTIVE;                             // Goes to the ACTIVE state.
     }
 
@@ -297,9 +300,13 @@ public class EnemyPumpkinManager : MonoBehaviour
             hitSparkParticle.Play();
         }
 
-			blood.Play(true);
+        mat.material = material[1];
+
+        blood.Play(true);
 
         currentHealth -= damage;                                // Applies the damage recieved
+
+        anim.SetTrigger("Damaged");                             // It triggers the enemy Damaged animation.
 
         if (currentHealth <= 0) setDead();                      // Calls the setDead function if the enemy has died
 
@@ -343,7 +350,7 @@ public class EnemyPumpkinManager : MonoBehaviour
 
     private void AttackAction(int damageDealt, float attackDuration)
     {
-        Debug.Log("attacking player");
+        //Debug.Log("attacking player");
 
         leftHandAttack1.enabled = true;                                     //Sets to true the collider of the leftHandAttack1.
 
@@ -359,7 +366,7 @@ public class EnemyPumpkinManager : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        Debug.Log("player lost");
+        //Debug.Log("player lost");
         if (other.tag == "Player") playerInRange = false;                   // Sets the playerInRange to true if the player has exit the area detection of the enemy.
     }
 }

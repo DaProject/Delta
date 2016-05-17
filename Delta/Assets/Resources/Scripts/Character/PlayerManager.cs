@@ -23,7 +23,8 @@ public class PlayerManager : MonoBehaviour
 
     // Damage
     [Header("Attacks & Habilities")]
-    public bool sword10Active;                      // Bool that allows to use the sword10 ability.
+    public bool sword10Active;                      // Bool that allows the player to use the sword10 ability.
+    public bool dashActive;                         // Bool that allows the player to use the dash ability;
 
     //Stunned
     [Header("Stunned")]
@@ -42,13 +43,13 @@ public class PlayerManager : MonoBehaviour
 	[Header("UI")]
 	public Slider healthSlider;                     // It shows the health bar.
 	public Image damageImage;                       // The UI image that shows when the player gets hit.
-    public GameObject sword10Sprite;                     // Image that shows the sword10 ability
     public Image blackScreen;                       // Used to go to the main menu after winning or losing.
     public Color flashColor;                        // The color of the damageImage.
     public Text victoryText;                        // Text that appears after winning.
     public Text lostText;                           // Text that appears after losing.
     public Text cooldownSword10;                    // Text that says the amount of CD the sword10Ability has.
     public Text newAbility;
+    public GameObject sword10Sprite;                // Image that shows the sword10 ability
     public GameObject pointsText;
     public PointCounter score;
     public float counterMenu;                       // Counter that says how much time ara going to pass between winning or losing and goint to the main menu.
@@ -64,12 +65,14 @@ public class PlayerManager : MonoBehaviour
     // Control player
     [Header("Control player")]
     //public GameObject sword;
+    public float AuxXSensitivity;
     public bool godMode;                                // Bool used for the god mode.
     public float attack01ColliderRadius;			    // Auxiliar variable that sets the radius of the attack01Collider.
     public PlayerAttack playerAttack;                  // PlayerAttack script.
     public PlayerAnimation playerAnimation;            // PlayerAnimation script.
     public CharacterBehaviour characterBehaviour;
     public CharacterController characterController;
+    public CameraLookRotation cameraLookRotation;
 
     // Colliders
     [Header("Colliders")]
@@ -183,6 +186,9 @@ public class PlayerManager : MonoBehaviour
         if (playerAnimation.attackRatio <= 0)
         {
             characterBehaviour.speed = baseSpeed;
+            characterBehaviour.dashing = false;
+
+            cameraLookRotation.XSensitivity = AuxXSensitivity;
 
             playerAnimation.swordAnim.SetBool("SwordMode", true);
             playerAnimation.swordAnim.SetBool("ChainMode", false);
@@ -191,14 +197,14 @@ public class PlayerManager : MonoBehaviour
             else if (Input.GetMouseButtonDown(1)) playerAttack.Attack01(playerAttack.damageAttack01);                                   // Calls the setAttack01 function if mouse right button is pressed.
             else if (Input.GetKeyDown(KeyCode.Alpha1) && sword10Active) playerAttack.Sword10(playerAttack.damageSword10);               // Calls the setSword10 function if the 1 keypad is pressed, and if is not in chain mode.
             else if (Input.GetKeyDown(KeyCode.Alpha2)) playerAttack.Chain01(playerAttack.damageChain01);                                // If the chain mode is active, goes to the setChain01.
-            else if (Input.GetKeyDown(KeyCode.LeftShift)) playerAttack.Dash();                                                          // Calls the setDash function if left shift key is pressed.
-            Debug.Log("baseSpeed: " + baseSpeed);
+            else if (Input.GetKeyDown(KeyCode.LeftShift) && dashActive) playerAttack.Dash();                                                          // Calls the setDash function if left shift key is pressed.
+            //Debug.Log("baseSpeed: " + baseSpeed);
         }
         else if (playerAnimation.attackRatio > 0)
         {
             characterBehaviour.speed = 0.0f;
             playerAnimation.attackRatio -= Time.deltaTime;
-            Debug.Log("baseSpeed: " + baseSpeed);
+            //Debug.Log("baseSpeed: " + baseSpeed);
         }
     }
 
@@ -378,7 +384,7 @@ public class PlayerManager : MonoBehaviour
         playerAudio.Play();
 
         counterMenu = Time.realtimeSinceStartup;
-        Debug.Log("dead");
+        //Debug.Log("dead");
 
         state = PlayerStates.DEAD;                              // Calls the DEAD state.
     }
@@ -389,7 +395,7 @@ public class PlayerManager : MonoBehaviour
         playerCapsuleCollider.enabled = false;
         characterController.enabled = false;
         counterMenu = Time.realtimeSinceStartup;
-        Debug.Log("winning");
+        //Debug.Log("winning");
         state = PlayerStates.VICTORY;                           // Calls the VICTORY state.
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - SF_Door
   - Energy
   - EnergyHealth
+  - Generator
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Rocks
   - Drop
   - Energy
-  - 
+  - Trigger
   - 
   - 
   - 

@@ -6,13 +6,16 @@ using System.Collections;
 public class CharacterBehaviour : MonoBehaviour
 {
     public CharacterController characterController;
+    public CameraLookRotation cameraLookRotation;
     
     public float speed;
+    public float dashSpeed;
     public float jumpSpeed;
 
     public float gravityMagnitud;
 
     private bool jump;
+    public bool dashing;
     private Vector2 inputAxis;
     public Vector3 moveDirection;
 
@@ -43,12 +46,23 @@ public class CharacterBehaviour : MonoBehaviour
 
         else moveDirection += gravityMagnitud * Physics.gravity * Time.fixedDeltaTime;
 
-        moveDirection.x = desiredMove.x * speed;
-        moveDirection.z = desiredMove.z * speed;
-        
+
+        if (dashing)
+        {
+            cameraLookRotation.XSensitivity = 0.0f;
+            moveDirection.x = desiredMove.x * dashSpeed;
+            moveDirection.z = desiredMove.z * dashSpeed;
+        }
+        else
+        {
+            moveDirection.x = desiredMove.x * speed;
+            moveDirection.z = desiredMove.z * speed;
+        }
+
         //Debug.Log("x: " + moveDirection.x + " z: " + moveDirection.z);
 
         characterController.Move(moveDirection * Time.fixedDeltaTime);
+
     }
 
     void ReadInput()
@@ -56,4 +70,5 @@ public class CharacterBehaviour : MonoBehaviour
         inputAxis.x = Input.GetAxis("Horizontal");
         inputAxis.y = Input.GetAxis("Vertical");
     }
+
 }

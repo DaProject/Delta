@@ -14,6 +14,10 @@ public class PlayerAnimation : MonoBehaviour
     // Animations
     public Animator anim;                                               // The animator component from the player.
     public Animator swordAnim;
+    public AnimationClip attack10;
+    public AnimationClip attack01;
+    public AnimationClip sword10;
+    public AnimationClip dash;
 
     void Start()
     {
@@ -44,12 +48,12 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetTrigger("Attack10");                                    // Triggers the condition for the Attack10 animation.
         swordAnim.SetBool("SwordMode", true);
         swordAnim.SetBool("ChainMode", false);
-        
-        attackRatio = anim.GetCurrentAnimatorClipInfo(0).Length;        // Gets the lenght of the current animation.
+
+        attackRatio = attack10.length;                                  // Gets the lenght of the current animation.
 
         playerManager.attackStateCounter = attackRatio;
 
-        Debug.Log("playing Attack10Animation");
+        //Debug.Log("playing Attack10Animation");
     }
 
     public void Attack01Animation()
@@ -57,12 +61,12 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetTrigger("Attack01");
         swordAnim.SetBool("SwordMode", false);
         swordAnim.SetBool("ChainMode", true);
-        
-        attackRatio = anim.GetCurrentAnimatorClipInfo(0).Length;        // Gets the lenght of the current animation.
+
+        attackRatio = attack01.length;                                  // Gets the lenght of the current animation.
 
         playerManager.attackStateCounter = attackRatio;                 // Gets the lenght of the current animation.
 
-        Debug.Log("playing Attack01Animation");
+        //Debug.Log("playing Attack01Animation");
     }
 
     public void Sword10Animation()
@@ -70,12 +74,12 @@ public class PlayerAnimation : MonoBehaviour
         anim.SetTrigger("Sword10");
         swordAnim.SetBool("SwordMode", true);
         swordAnim.SetBool("ChainMode", false);
-
-        attackRatio = anim.GetCurrentAnimatorClipInfo(0).Length;        // Gets the lenght of the current animation.
+        
+        attackRatio = sword10.length;                                   // Gets the lenght of the current animation.
 
         playerManager.attackStateCounter = attackRatio;                 // Gets the lenght of the current animation.
 
-        Debug.Log("playing Sword10Animation");
+        //Debug.Log("playing Sword10Animation");
     }
 
     public void Chain01Animation()
@@ -86,17 +90,17 @@ public class PlayerAnimation : MonoBehaviour
 
         playerManager.attackStateCounter = attackRatio;                 // Gets the lenght of the current animation.
 
-        Debug.Log("playing Chain01Animation");
+        //Debug.Log("playing Chain01Animation");
     }
 
     public void DashAnimation()
     {
-        anim.SetTrigger("Dash");
+        //anim.SetTrigger("Dash");
 
-        attackRatio = anim.GetCurrentAnimatorClipInfo(0).Length;        // Gets the lenght of the current animation.
+        attackRatio = 0.2f;        // Gets the lenght of the current animation.
 
         playerManager.attackStateCounter = attackRatio;                 // Gets the lenght of the current animation.
 
-        Debug.Log("playing DashAnimation");
+        //Debug.Log("playing DashAnimation");
     }
 }
